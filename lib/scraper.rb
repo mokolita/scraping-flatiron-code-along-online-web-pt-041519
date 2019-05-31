@@ -16,6 +16,7 @@ class Scraper
       course.description = post.css("p").text
     end 
     end 
+    binding.pry 
   
     def print_courses
     self.make_courses
@@ -24,7 +25,7 @@ class Scraper
         puts "Title: #{course.title}"
         puts "  Schedule: #{course.schedule}"
         puts "  Description: #{course.description}"
-        binding.pry
+        
       end
     end
   end
